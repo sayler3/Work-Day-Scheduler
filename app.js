@@ -1,20 +1,17 @@
 
 $(document).ready(function() {
-    const currentTime = moment().format('MMMM Do YYYY');
-    $("#currentDay").text(currentTime)
+    const currentDate = moment().format('MMMM Do YYYY');
+    const currentTime = parseInt(moment().format('H'));
+    $("#currentDay").text(currentDate)
 
     $("span").attr("style", "width: 75px")
 
-    const times = [21, 22, 23]
-    // const times = moment().format('H');
+    const times = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 
     times.forEach(time => {
         const timeCheck = window.localStorage.getItem(time)
 
         const currentHour = moment().hour()
-
-        console.log(currentTime)
-        console.log(time)
 
         if (currentHour > time) {
             $(`#${time}`).addClass("bg-danger text-white")

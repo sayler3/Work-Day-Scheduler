@@ -36,7 +36,7 @@ To install this project locally clone this [**project repository**](https://gith
 
 ## Usage
 
-This simple calendar application can be viewed at: [**this link**](https://sayler3.github.io/Work-Day-Scheduler/).
+This simple calendar application can be viewed: [**Here**](https://sayler3.github.io/Work-Day-Scheduler/).
 
 ## Credits
 
